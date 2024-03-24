@@ -5,25 +5,20 @@ const getMoveableSquares = (selected: string): Array<string> => {
   const cordinates = [];
   const x = parseInt(selected.split("")[0]);
   const y = parseInt(selected.split("")[2]);
-  for (let i = x; 0 < i; i--) {
+  let yaxis = y;
+  let yaxis1 = y;
+  let yaxis2 = y;
+  for (let i = x; 0 <= i; i--) {
     if (x - i >= 0 && y - i >= 0) {
       cordinates.push(`${x - i}-${y - i}`);
     }
+    cordinates.push(`${i}-${yaxis1++}`);
   }
-  let yaxis = y;
+
   for (let j = x; j <= 7; j++) {
     if (j <= 7 && yaxis <= 7) {
       cordinates.push(`${j}-${yaxis++}`);
     }
-  }
-
-  let yaxis1 = y;
-  for (let i = x; 0 <= i; i--) {
-    cordinates.push(`${i}-${yaxis1++}`);
-  }
-
-  let yaxis2 = y;
-  for (let j = x; j <= 7; j++) {
     cordinates.push(`${j}-${yaxis2--}`);
   }
 
