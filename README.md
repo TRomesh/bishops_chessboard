@@ -1,5 +1,9 @@
 # ♟ Bishop's Chessboard
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/0043b41f-8ffe-4a45-bb90-f961af5fda3a/deploy-status)](https://app.netlify.com/sites/bishops-chessboard/deploys)
+
+[Demo](https://bishops-chessboard.netlify.app/)
+
 This code implements a chessboard hover state using HTML, CSS, React and TypeScript.
 
 <img src="https://github.com/TRomesh/Sentiment-Analysis-in-Sinhala/assets/9572090/78564964-7bc3-46fd-a464-2dc487b58139" alt="drawing" width="300"/>

@@ -62,8 +62,20 @@ function App() {
     return sqares;
   };
 
+  const clearSelection = () => {
+    setSelected("");
+    setMovingSquares([]);
+  };
+
   return (
     <>
+      <div className="flex justify-end">
+        <button
+          className="px-4 py-2 bg-blue-500 text-white font-bold rounded"
+          onClick={clearSelection}>
+          Clear
+        </button>
+      </div>
       <div className="grid grid-cols-8 grid-rows-8 border-2 border-black w-360 h-360 mt-10 ml-80 mr-80 mb-10">
         {renderSqares()}
       </div>
